@@ -1,0 +1,19 @@
+Un site avec 5 pages et un menu de navigation
+Le site permmetrra d'enregistrer des utilisateurs (page d'inscription), de les afficher tous ou d'en chercher (page de recherche), de supprimer les utilisateurs (page d'administration). 
+
+Une page de connexion
+avec un formulaire (login, mot de passe)
+
+Une page d'accueil
+Avec un titre Un paragraphe de présentation, une image
+
+Une page d'inscription
+Avec un formulaire (Nom, prenom, date de naissance, mail, login, mot de passe)
+Doit afficher le contenu du formulaire dans un console log lors de l'envoi.
+
+Une page de recherche
+avec un champ de recherche et un table de résultats
+Dont générer une table en fonction d'un tableau d'utilisateurs.
+
+Une page d'administration
+avec la liste des utilisateurs et la possibilité de les supprimer

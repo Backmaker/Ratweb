@@ -1,0 +1,30 @@
+version:  '3'
+
+services:
+    web_app:
+        build: 
+            context: ./web_app
+            dockerfile: Dockerfile
+        ports:
+            - '80:80'
+            - '443:443'
+        
+    web_services: 
+        build:
+            context: ./web_services
+            dockerfile: Dockerfile
+        environment: 
+            FLASK_ENV: development
+            FLASK_APP: app.py
+        ports:
+            - '5000:5000'
+
+    database:
+        image: mariadb
+        environment: 
+            MYSQL_DATABASE: users
+            MYSQL_ROOT_PASSWORD: root
+        ports:
+            - '3306:3306'
+        volumes: 
+            - ./database:/docker-entrypoint-initdb.d:ro

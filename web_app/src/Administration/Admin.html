@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Admin.css">
+    <title>Administration</title>
+</head>
+<body>
+    <p>Tableau du Maitre Admin</p>
+    <table type = center>
+        <caption>Utilisateurs</caption>
+     
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Téléphone</th>
+                <th>Adresse Email</th>
+            </tr>
+        </thead>
+     
+        <tfoot> <!-- Pied de tableau -->
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date de naissance</th>
+                <th>Téléphone</th>
+                <th>Adresse Email</th>
+            </tr>
+        </tfoot>
+     
+        <tbody> <!-- Corps du tableau -->
+            <ul id="userList">
+                <script src="./admin.js"></script>
+            </ul>
+        </tbody>
+     </table>
+
+
+    
+</body>
+<a href="../index.html"><input class="AccueilButton" type='button' value='Accueil'></a>
+</html>
